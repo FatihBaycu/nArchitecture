@@ -1,7 +1,7 @@
 ﻿using Application.Features.Brands.Dtos;
 using Application.Features.Brands.Models;
 using Application.Features.Brands.Queries.GetListBrand;
-using Application.Features.someFeature.Rules;
+using Application.Features.Brands.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Application.Requests;

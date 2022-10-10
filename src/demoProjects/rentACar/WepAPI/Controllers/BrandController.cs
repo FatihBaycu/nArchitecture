@@ -34,9 +34,9 @@ namespace WepAPI.Controllers
         }
 
         [HttpGet("{Id}")]
-        public async Task<IActionResult> GetById([FromRoute] GetByIdBrandQuery getByIdIdBrandQuery)
+        public async Task<IActionResult> GetById([FromRoute] GetByIdBrandQuery getByIdBrandQuery)
         {
-            BrandGetByIdDto brandGetByIdDto = await Mediator.Send(getByIdIdBrandQuery);
+            BrandGetByIdDto brandGetByIdDto = await Mediator.Send(getByIdBrandQuery);
             return Ok(brandGetByIdDto);
         }
 
